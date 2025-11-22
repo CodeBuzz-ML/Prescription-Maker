@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Prescription</title>
+    <link rel="stylesheet" href="../css/prescription.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header-block">
+        <img src="../assets/doc-header.jpeg" class="header-img" alt="Header">
+        <img src="../assets/logo.png" class="logo" alt="Clinic Logo">
+        <h2 class="clinic-title">Happy Family Clinic</h2>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Patient Details -->
+    <div class="patient-row">
+
+        <div class="left">
+            <label>Patient’s Full Name:</label>
+            <input type="text" id="p_name">
+
+            <label>Age / Sex:</label>
+            <input type="text" id="p_age">
+        </div>
+
+        <div class="right">
+            <label>Date:</label>
+            <input type="date" id="p_date">
+
+            <label>Weight:</label>
+            <input type="text" id="p_weight">
+
+            <label>Temp:</label>
+            <input type="text" id="p_temp">
+
+            <label>Throat:</label>
+            <input type="text" id="p_throat">
+        </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <!-- Full width sections -->
+    <div class="full-block">
+        <label class="section-title">Diagnosis:</label>
+        <textarea id="diagnosis" rows="3"></textarea>
+    </div>
+
+    <div class="full-block">
+        <label class="section-title">Treatment:</label>
+        <textarea id="treatment" rows="4"></textarea>
+    </div>
+
+    <div class="full-block">
+        <label class="section-title">Follow up:</label>
+        <textarea id="followup" rows="2"></textarea>
+    </div>
+
+    <div class="full-block">
+        <label class="section-title">Advise:</label>
+        <textarea id="advise" rows="2"></textarea>
+    </div>
+
+    <!-- Print Button -->
+    <button id="printBtn" class="print-button">Print Prescription</button>
+
+</div>
+
+<script src="../js/prescription.js"></script>
+</body>
+</html>
