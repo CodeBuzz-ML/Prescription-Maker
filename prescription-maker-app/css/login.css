@@ -1,49 +1,129 @@
-body {
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f4f4f4;
-    font-family: Arial, sans-serif;
+    background: #eff2f6;
 }
 
-.login-container {
-    width: 90%;
-    max-width: 350px;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+.login-wrapper {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Login Box */
+.login-container {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
     text-align: center;
 }
 
-.clinic-logo {
-    height: 80px;
-    margin-bottom: 10px;
+.logo {
+    width: 95px;
+    margin-bottom: 20px;
 }
 
-input {
+h2 {
+    margin-bottom: 22px;
+    color: #222;
+}
+
+/* Input Fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
-    border-radius: 8px;
+    margin-top: 6px;
+    font-size: 15px;
     border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.15s border-color;
 }
 
+.input-group input:focus {
+    outline: none;
+    border-color: #2574f5;
+}
+
+/* Login Button */
 button {
-    padding: 12px;
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    background: #2574f5;
     border: none;
-    background: #1457a7;
     color: white;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: bold;
+    transition: 0.25s;
+    margin-top: 5px;
 }
 
-#error {
+button:hover {
+    background: #1b5fd1;
+}
+
+/* Error Message */
+#error-msg {
+    margin-top: 12px;
     color: red;
-    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* -------------------------
+    RESPONSIVE BREAKPOINTS
+   ------------------------- */
+
+/* For smaller phones */
+@media (max-width: 380px) {
+    .login-container {
+        padding: 20px 18px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* For tablets */
+@media (min-width: 768px) {
+    .login-container {
+        max-width: 420px;
+        padding: 40px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    input {
+        font-size: 16px;
+    }
 }

@@ -9,69 +9,67 @@
 
 <body>
 
-<div class="container">
+<div class="wrapper">
 
-    <div class="header-block">
-        <img src="../assets/doc-header.jpeg" class="header-img" alt="Header">
-        <img src="../assets/logo.png" class="logo" alt="Clinic Logo">
-        <h2 class="clinic-title">Happy Family Clinic</h2>
+    <!-- ONLY DOCUMENT HEADER -->
+    <div class="header">
+        <img src="../assets/doc-header.jpeg" class="header-img" />
     </div>
 
     <hr class="divider">
 
-    <!-- Patient Details -->
-    <div class="patient-row">
+    <!-- PATIENT INFO -->
+    <div class="patient-info">
 
-        <div class="left">
-            <label>Patient’s Full Name:</label>
-            <input type="text" id="p_name">
+        <div class="column">
+            <label>Patient's Full Name</label>
+            <input id="p_name" type="text">
 
-            <label>Age / Sex:</label>
-            <input type="text" id="p_age">
+            <label>Age / Sex</label>
+            <input id="p_age" type="text">
         </div>
 
-        <div class="right">
-            <label>Date:</label>
-            <input type="date" id="p_date">
+        <div class="column">
+            <label>Date</label>
+            <input id="p_date" type="date">
 
-            <label>Weight:</label>
-            <input type="text" id="p_weight">
+            <label>Weight</label>
+            <input id="p_weight" type="text">
 
-            <label>Temp:</label>
-            <input type="text" id="p_temp">
+            <label>Temp</label>
+            <input id="p_temp" type="text">
 
-            <label>Throat:</label>
-            <input type="text" id="p_throat">
+            <label>Throat</label>
+            <input id="p_throat" type="text">
         </div>
 
     </div>
 
     <hr class="divider">
 
-    <!-- Full width sections -->
-    <div class="full-block">
-        <label class="section-title">Diagnosis:</label>
+    <!-- LONG SECTIONS -->
+    <div class="section">
+        <label class="title">Diagnosis</label>
         <textarea id="diagnosis" rows="3"></textarea>
     </div>
 
-    <div class="full-block">
-        <label class="section-title">Treatment:</label>
+    <div class="section">
+        <label class="title">Treatment</label>
         <textarea id="treatment" rows="4"></textarea>
     </div>
 
-    <div class="full-block">
-        <label class="section-title">Follow up:</label>
+    <div class="section">
+        <label class="title">Follow Up</label>
         <textarea id="followup" rows="2"></textarea>
     </div>
 
-    <div class="full-block">
-        <label class="section-title">Advise:</label>
+    <div class="section">
+        <label class="title">Advise</label>
         <textarea id="advise" rows="2"></textarea>
     </div>
 
-    <!-- Print Button -->
-    <button id="printBtn" class="print-button">Print Prescription</button>
-
+    <!-- PRINT BUTTON -->
+    <button class="print-btn" id="printBtn">Print Prescription</button>
 </div>
 
 <script src="../js/prescription.js"></script>

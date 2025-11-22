@@ -6,69 +6,59 @@
     <title>Prescription Print</title>
     <link rel="stylesheet" href="../css/prescription-print.css">
 </head>
-
 <body>
 
-<div class="page">
+<div class="print-container">
 
-    <!-- Header section -->
-    <div class="header">
-        <img src="../assets/doc-header.jpeg" class="header-img" alt="Header">
-        <img src="../assets/logo.png" class="logo" alt="Clinic Logo">
-        <div class="clinic-info">
-            <h2>Happy Family Clinic</h2>
-            <p>123 Health Street, Pune, India</p>
-            <p>Phone: +91 98765 43210</p>
-        </div>
+    <!-- HEADER BANNER -->
+    <div class="header-banner">
+        <img src="../assets/doc-header.jpeg" class="header-img">
     </div>
 
-    <hr class="thin-line">
+    <!-- PATIENT DETAILS -->
+    <div class="patient-section">
 
-    <!-- Patient info -->
-    <div class="section patient-info">
-        <div class="left">
-            <p><strong>Patient Name:</strong> <span id="p_name"></span></p>
-            <p><strong>Age/Sex:</strong> <span id="p_age"></span></p>
+        <div class="left-side">
+            <p><strong>Patient’s Full Name:</strong> <span id="p_name"></span></p>
+            <p><strong>Age/Sex:</strong> <span id="p_age_sex"></span></p>
         </div>
 
-        <div class="right">
+        <div class="right-side">
             <p><strong>Date:</strong> <span id="p_date"></span></p>
             <p><strong>Weight:</strong> <span id="p_weight"></span></p>
             <p><strong>Temp:</strong> <span id="p_temp"></span></p>
             <p><strong>Throat:</strong> <span id="p_throat"></span></p>
         </div>
+
     </div>
 
-    <hr class="thin-line">
+    <hr class="divider">
 
-    <!-- Diagnosis -->
+    <!-- MAIN SECTIONS -->
     <div class="section">
-        <h3 class="title">Diagnosis</h3>
-        <p class="content" id="p_diag"></p>
+        <label>Diagnosis:</label>
+        <div class="content-block" id="p_diagnosis"></div>
     </div>
 
-    <!-- Treatment -->
     <div class="section">
-        <h3 class="title">Treatment</h3>
-        <p class="content" id="p_treat"></p>
+        <label>Treatment:</label>
+        <div class="content-block" id="p_treatment"></div>
     </div>
 
-    <!-- Follow Up -->
     <div class="section">
-        <h3 class="title">Follow Up</h3>
-        <p class="content" id="p_follow"></p>
+        <label>Follow Up:</label>
+        <div class="content-block" id="p_followup"></div>
     </div>
 
-    <!-- Advise -->
     <div class="section">
-        <h3 class="title">Advise</h3>
-        <p class="content" id="p_advise"></p>
+        <label>Advise:</label>
+        <div class="content-block" id="p_advise"></div>
     </div>
 
-    <!-- Signature -->
-    <div class="signature-block">
-        <p><strong>Doctor's Signature</strong></p>
-        <div class="sign-line"></div>
+    <!-- SIGNATURE -->
+    <div class="signature-section">
+        <p>______________________________</p>
+        <p>Doctor’s Signature</p>
     </div>
 
 </div>

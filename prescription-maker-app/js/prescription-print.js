@@ -1,23 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Read data from URL parameters
+const params = new URLSearchParams(window.location.search);
 
-    const data = JSON.parse(localStorage.getItem("prescription-data"));
+document.getElementById("p_name").innerText = params.get("name") || "";
+document.getElementById("p_age_sex").innerText = params.get("age_sex") || "";
+document.getElementById("p_date").innerText = params.get("date") || "";
+document.getElementById("p_weight").innerText = params.get("weight") || "";
+document.getElementById("p_temp").innerText = params.get("temp") || "";
+document.getElementById("p_throat").innerText = params.get("throat") || "";
 
-    if (data) {
-        document.getElementById("p_name").innerText = data.name;
-        document.getElementById("p_age").innerText = data.age;
-        document.getElementById("p_date").innerText = data.date;
-        document.getElementById("p_weight").innerText = data.weight;
-        document.getElementById("p_temp").innerText = data.temp;
-        document.getElementById("p_throat").innerText = data.throat;
+document.getElementById("p_diagnosis").innerText = params.get("diagnosis") || "";
+document.getElementById("p_treatment").innerText = params.get("treatment") || "";
+document.getElementById("p_followup").innerText = params.get("followup") || "";
+document.getElementById("p_advise").innerText = params.get("advise") || "";
 
-        document.getElementById("p_diag").innerText = data.diagnosis;
-        document.getElementById("p_treat").innerText = data.treatment;
-        document.getElementById("p_follow").innerText = data.follow;
-        document.getElementById("p_advise").innerText = data.advise;
-    }
-
-    // auto-open print dialog
-    setTimeout(() => {
-        window.print();
-    }, 500);
-});
+// Auto print
+window.onload = () => {
+    window.print();
+};
