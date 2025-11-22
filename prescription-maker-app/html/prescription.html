@@ -3,75 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Prescription</title>
+    <title>Prescription</title>
     <link rel="stylesheet" href="../css/prescription.css">
 </head>
 
 <body>
 
-<div class="wrapper">
+<div id="prescription-container">
 
-    <!-- ONLY DOCUMENT HEADER -->
-    <div class="header">
-        <img src="../assets/doc-header.jpeg" class="header-img" />
-    </div>
+    <!-- Header Image -->
+    <img src="../assets/doc-header.jpeg" class="doc-header" alt="Header">
 
-    <hr class="divider">
+    <hr class="separator">
 
-    <!-- PATIENT INFO -->
-    <div class="patient-info">
+    <!-- Patient Info -->
+    <div class="two-col">
 
-        <div class="column">
-            <label>Patient's Full Name</label>
-            <input id="p_name" type="text">
+        <div class="left">
+            <label>Patient's Full Name:</label>
+            <input type="text" id="pname">
 
-            <label>Age / Sex</label>
-            <input id="p_age" type="text">
+            <label>Age / Sex:</label>
+            <input type="text" id="age">
         </div>
 
-        <div class="column">
-            <label>Date</label>
-            <input id="p_date" type="date">
+        <div class="right">
+            <label>Date:</label>
+            <input type="date" id="date">
 
-            <label>Weight</label>
-            <input id="p_weight" type="text">
+            <label>Weight:</label>
+            <input type="text" id="weight">
 
-            <label>Temp</label>
-            <input id="p_temp" type="text">
+            <label>Temp:</label>
+            <input type="text" id="temp">
 
-            <label>Throat</label>
-            <input id="p_throat" type="text">
+            <label>Throat:</label>
+            <input type="text" id="throat">
         </div>
-
     </div>
 
-    <hr class="divider">
+    <hr class="separator">
 
-    <!-- LONG SECTIONS -->
-    <div class="section">
-        <label class="title">Diagnosis</label>
-        <textarea id="diagnosis" rows="3"></textarea>
-    </div>
+    <!-- Main Fields -->
+    <label>Diagnosis:</label>
+    <textarea id="diagnosis"></textarea>
 
-    <div class="section">
-        <label class="title">Treatment</label>
-        <textarea id="treatment" rows="4"></textarea>
-    </div>
+    <label>Treatment:</label>
+    <textarea id="treatment"></textarea>
 
-    <div class="section">
-        <label class="title">Follow Up</label>
-        <textarea id="followup" rows="2"></textarea>
-    </div>
+    <label>Follow Up:</label>
+    <textarea id="followup"></textarea>
 
-    <div class="section">
-        <label class="title">Advise</label>
-        <textarea id="advise" rows="2"></textarea>
-    </div>
+    <label>Advise:</label>
+    <textarea id="advise"></textarea>
 
-    <!-- PRINT BUTTON -->
-    <button class="print-btn" id="printBtn">Print Prescription</button>
 </div>
 
+<button id="printBtn">Print Prescription</button>
+
 <script src="../js/prescription.js"></script>
+
 </body>
 </html>

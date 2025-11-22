@@ -6,63 +6,46 @@
     <title>Prescription Print</title>
     <link rel="stylesheet" href="../css/prescription-print.css">
 </head>
+
 <body>
 
-<div class="print-container">
+<div id="print-area">
 
-    <!-- HEADER BANNER -->
-    <div class="header-banner">
-        <img src="../assets/doc-header.jpeg" class="header-img">
-    </div>
+    <img src="../assets/doc-header.jpeg" class="doc-header">
 
-    <!-- PATIENT DETAILS -->
-    <div class="patient-section">
+    <hr class="separator">
 
-        <div class="left-side">
-            <p><strong>Patient’s Full Name:</strong> <span id="p_name"></span></p>
-            <p><strong>Age/Sex:</strong> <span id="p_age_sex"></span></p>
+    <div class="info-row">
+        <div class="left-block">
+            <p><strong>Patient's Full Name:</strong> <span id="pname"></span></p>
+            <p><strong>Age/Sex:</strong> <span id="age"></span></p>
         </div>
 
-        <div class="right-side">
-            <p><strong>Date:</strong> <span id="p_date"></span></p>
-            <p><strong>Weight:</strong> <span id="p_weight"></span></p>
-            <p><strong>Temp:</strong> <span id="p_temp"></span></p>
-            <p><strong>Throat:</strong> <span id="p_throat"></span></p>
+        <div class="right-block">
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>Weight:</strong> <span id="weight"></span></p>
+            <p><strong>Temp:</strong> <span id="temp"></span></p>
+            <p><strong>Throat:</strong> <span id="throat"></span></p>
         </div>
-
     </div>
 
-    <hr class="divider">
+    <hr class="separator">
 
-    <!-- MAIN SECTIONS -->
-    <div class="section">
-        <label>Diagnosis:</label>
-        <div class="content-block" id="p_diagnosis"></div>
-    </div>
+    <h3>Diagnosis</h3>
+    <p class="block" id="diagnosis"></p>
 
-    <div class="section">
-        <label>Treatment:</label>
-        <div class="content-block" id="p_treatment"></div>
-    </div>
+    <h3>Treatment</h3>
+    <p class="block" id="treatment"></p>
 
-    <div class="section">
-        <label>Follow Up:</label>
-        <div class="content-block" id="p_followup"></div>
-    </div>
+    <h3>Follow Up</h3>
+    <p class="block" id="followup"></p>
 
-    <div class="section">
-        <label>Advise:</label>
-        <div class="content-block" id="p_advise"></div>
-    </div>
-
-    <!-- SIGNATURE -->
-    <div class="signature-section">
-        <p>______________________________</p>
-        <p>Doctor’s Signature</p>
-    </div>
+    <h3>Advise</h3>
+    <p class="block" id="advise"></p>
 
 </div>
 
 <script src="../js/prescription-print.js"></script>
+
 </body>
 </html>

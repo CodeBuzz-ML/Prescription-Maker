@@ -1,101 +1,69 @@
 body {
     margin: 0;
-    font-family: "Segoe UI", sans-serif;
-    background: #ebebeb;
+    background: #f7f7f7;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
-.wrapper {
-    max-width: 850px;
-    margin: 25px auto;
+#prescription-container {
     background: white;
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* HEADER */
-.header {
+.doc-header {
     width: 100%;
+    border-radius: 8px;
 }
 
-.header-img {
-    width: 100%;
-    border-radius: 6px;
-}
-
-/* DIVIDER */
-.divider {
-    margin: 20px 0;
+.separator {
     border: none;
-    border-top: 1px solid #cfcfcf;
+    border-top: 1.5px solid #555;
+    margin: 20px 0;
 }
 
-/* PATIENT INFO ROW */
-.patient-info {
+.two-col {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.column {
+.left, .right {
     flex: 1;
-    display: flex;
-    flex-direction: column;
+    min-width: 250px;
 }
 
 label {
+    display: block;
     margin-top: 12px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-input {
+input, textarea {
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-.section {
-    margin-top: 20px;
+textarea {
+    height: 120px;
 }
 
-.section textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.title {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* PRINT BUTTON */
-.print-btn {
+#printBtn {
     margin-top: 25px;
+    display: block;
     width: 100%;
     padding: 14px;
-    font-size: 18px;
-    background: #0077cc;
+    background: #1457a7;
     color: white;
     border: none;
     border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
-    transition: .2s;
-}
-
-.print-btn:hover {
-    background: #005fa3;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-    .patient-info {
-        flex-direction: column;
-        gap: 20px;
-    }
 }

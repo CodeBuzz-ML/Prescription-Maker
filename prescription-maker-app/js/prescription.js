@@ -1,20 +1,17 @@
 document.getElementById("printBtn").addEventListener("click", () => {
 
-    const data = {
-        name: document.getElementById("p_name").value,
-        age: document.getElementById("p_age").value,
-        date: document.getElementById("p_date").value,
-        weight: document.getElementById("p_weight").value,
-        temp: document.getElementById("p_temp").value,
-        throat: document.getElementById("p_throat").value,
+    // Save to localStorage for print page
+    localStorage.setItem("pname", document.getElementById("pname").value);
+    localStorage.setItem("age", document.getElementById("age").value);
+    localStorage.setItem("date", document.getElementById("date").value);
+    localStorage.setItem("weight", document.getElementById("weight").value);
+    localStorage.setItem("temp", document.getElementById("temp").value);
+    localStorage.setItem("throat", document.getElementById("throat").value);
+    localStorage.setItem("diagnosis", document.getElementById("diagnosis").value);
+    localStorage.setItem("treatment", document.getElementById("treatment").value);
+    localStorage.setItem("followup", document.getElementById("followup").value);
+    localStorage.setItem("advise", document.getElementById("advise").value);
 
-        diagnosis: document.getElementById("diagnosis").value,
-        treatment: document.getElementById("treatment").value,
-        follow: document.getElementById("followup").value,
-        advise: document.getElementById("advise").value
-    };
-
-    localStorage.setItem("prescription-data", JSON.stringify(data));
-
-    window.open("../html/prescription-print.html", "_blank");
+    // Open print page
+    window.location.href = "prescription-print.html";
 });

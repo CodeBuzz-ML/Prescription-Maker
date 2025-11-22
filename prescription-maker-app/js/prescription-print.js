@@ -1,19 +1,15 @@
-// Read data from URL parameters
-const params = new URLSearchParams(window.location.search);
-
-document.getElementById("p_name").innerText = params.get("name") || "";
-document.getElementById("p_age_sex").innerText = params.get("age_sex") || "";
-document.getElementById("p_date").innerText = params.get("date") || "";
-document.getElementById("p_weight").innerText = params.get("weight") || "";
-document.getElementById("p_temp").innerText = params.get("temp") || "";
-document.getElementById("p_throat").innerText = params.get("throat") || "";
-
-document.getElementById("p_diagnosis").innerText = params.get("diagnosis") || "";
-document.getElementById("p_treatment").innerText = params.get("treatment") || "";
-document.getElementById("p_followup").innerText = params.get("followup") || "";
-document.getElementById("p_advise").innerText = params.get("advise") || "";
-
-// Auto print
 window.onload = () => {
+    document.getElementById("pname").innerText = localStorage.getItem("pname");
+    document.getElementById("age").innerText = localStorage.getItem("age");
+    document.getElementById("date").innerText = localStorage.getItem("date");
+    document.getElementById("weight").innerText = localStorage.getItem("weight");
+    document.getElementById("temp").innerText = localStorage.getItem("temp");
+    document.getElementById("throat").innerText = localStorage.getItem("throat");
+    document.getElementById("diagnosis").innerText = localStorage.getItem("diagnosis");
+    document.getElementById("treatment").innerText = localStorage.getItem("treatment");
+    document.getElementById("followup").innerText = localStorage.getItem("followup");
+    document.getElementById("advise").innerText = localStorage.getItem("advise");
+
+    // Print automatically
     window.print();
 };
