@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Print</title>
+    <link rel="stylesheet" href="../css/invoice-print.css">
+</head>
+
+<body>
+
+<div id="print-area">
+
+    <img src="../assets/doc-header.jpeg" class="doc-header">
+
+    
+
+    <div class="info-row">
+        <div class="left-block">
+            <p><strong>Patient's Full Name:</strong> <span id="pname"></span></p>
+            <p><strong>Age/Sex:</strong> <span id="age"></span></p>
+        </div>
+
+        <div class="right-block">
+            <p><strong>Date:</strong> <span id="date"></span></p>
+            <p><strong>Weight:</strong> <span id="weight"></span></p>
+            <p><strong>Temp:</strong> <span id="temp"></span></p>
+            <p><strong>Throat:</strong> <span id="throat"></span></p>
+        </div>
+    </div>
+
+    <hr class="separator">
+
+    <h3>Consultation</h3>
+    <p class="block" id="consultation"></p>
+
+    <h3>Vaccination</h3>
+    <p class="block" id="vaccination"></p>
+    <hr class="separator">
+    <h3>Grand Total</h3>
+    <p class="block" id="gtotal"></p>
+
+</div>
+
+<script src="../js/invoice-print.js"></script>
+
+</body>
+</html>

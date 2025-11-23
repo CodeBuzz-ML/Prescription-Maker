@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription</title>
+    <link rel="stylesheet" href="../css/invoice.css">
+</head>
+
+<body>
+
+<div id="prescription-container">
+
+    <!-- Header Image -->
+    <img src="../assets/doc-header.jpeg" class="doc-header" alt="Header">
+
+    <hr class="separator">
+
+    <!-- Patient Info -->
+    <div class="two-col">
+
+        <div class="left">
+            <label>Patient's Full Name:</label>
+            <input type="text" id="pname">
+
+            <label>Age / Sex:</label>
+            <input type="text" id="age">
+        </div>
+
+        <div class="right">
+            <label>Date:</label>
+            <input type="date" id="date">
+
+            <label>Weight:</label>
+            <input type="text" id="weight">
+
+            <label>Temp:</label>
+            <input type="text" id="temp">
+
+            <label>Throat:</label>
+            <input type="text" id="throat">
+        </div>
+    </div>
+
+    <hr class="separator">
+
+    <!-- Main Fields -->
+    <label>Consultation:</label>
+    <textarea id="consultation"></textarea>
+
+    <label>Vaccination:</label>
+    <textarea id="vaccination"></textarea>
+
+
+</div>
+  <hr class="separator">
+
+
+
+
+<button id="printBtn">Print Invoice</button>
+
+<script src="../js/invoice.js"></script>
+
+</body>
+</html>
